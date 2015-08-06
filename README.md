@@ -1,6 +1,18 @@
+**WIP!** 
+TODO:
+- initial structure and dependencies [✓]
+- add Bourbon and sass-mq [✓]
+- default sass files [✓]
+- SASS styles gulp task [✓]
+- default HTML file [✓]
+- default javascript file [ ]
+- JS transpile browserify gulp task [ ]
+- watchify gulp task [ ]
+- ...
+
 # Boilerplate for HTML5 ES6 Web Apps
 
-Yet another boilerplate for HTML5 web apps. This time using ES6 (ECMAScript 6) everywhere as well as SASS to superpower your styles and Gulp as your beloved task runner. 
+Yet another boilerplate for HTML5 web apps. This time using ES6 (ECMAScript 6) everywhere as well as SASS to superpower your styles and Gulp as your beloved task runner. It uses Browserify to bundle your Javascript dependencies so all you have to do is to import them as ES6-style module imports.
 
 This boilerplate comes with these pre-installed and ready to use features:
 
@@ -8,8 +20,8 @@ This boilerplate comes with these pre-installed and ready to use features:
 - SASS ([http://sass-lang.com/](http://sass-lang.com/))
 - Bourbon (ligthweight mixin library for SASS, [http://bourbon.io/](http://bourbon.io/))
 - SASS-MQ (media queries in an elegant way, [https://github.com/sass-mq/sass-mq](https://github.com/sass-mq/sass-mq))
-- ES6 via Babel transpiler (use all those shiny new ES6 Features now, [https://babeljs.io/](https://babeljs.io/))
-- Browserify (used together with babelify for module loading the new ES6 way via import,export in your JS files)
+- ES6 via Babel transpiler (use all those shiny new [ES6 Features](http://es6-features.org/) now, [https://babeljs.io/](https://babeljs.io/))
+- Browserify (used together with babelify for module loading the new ES6 way via import/export in your JS files)
 
 ## ES6
 
@@ -43,4 +55,7 @@ To add my dependencies I use npm - even for browser-only libraries, as npm is a 
 
 But your are free to add Bower or jspm or another JS package manager to this boilerplate. 
 
+## Javascript modules import
+
+WIP coming soon
   
