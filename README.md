@@ -1,3 +1,15 @@
+**WIP!** 
+TODO:
+- initial structure and dependencies [✓]
+- add Bourbon and sass-mq [✓]
+- default sass files [✓]
+- SASS styles gulp task [✓]
+- default HTML file [✓]
+- default javascript file [ ]
+- JS transpile browserify gulp task [ ]
+- watchify gulp task [ ]
+- ...
+
 # Boilerplate for HTML5 ES6 Web Apps
 
 Yet another boilerplate for HTML5 web apps. This time using ES6 (ECMAScript 6) everywhere as well as SASS to superpower your styles and Gulp as your beloved task runner. 
