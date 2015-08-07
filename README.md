@@ -10,21 +10,21 @@ TODO:
 - browser-sync gulp task [partial]
 - ...
 
-# Boilerplate for HTML5 ES6 Web Apps
+# Boilerplate for HTML5 ES6 (ES2015) Web Apps
 
-Yet another boilerplate for HTML5 web apps. This time using ES6 (ECMAScript 6) everywhere as well as SASS to superpower your styles and Gulp as your beloved task runner. It uses Browserify to bundle your Javascript dependencies so all you have to do is to import them as ES6-style module imports.
+Yet another boilerplate for HTML5 web apps. This time using ES6 (ECMAScript 6, ES2015) everywhere as well as SASS to superpower your styles and Gulp as your beloved task runner. It uses Browserify to bundle your Javascript dependencies so all you have to do is to import them as ES6-style module imports.
 
 This boilerplate comes with these pre-installed and ready to use features:
 
-- Gulp with ES6 style gulpfile ([http://gulpjs.com/](http://gulpjs.com/))
+- Gulp with ES6 (ES2015) style gulpfile ([http://gulpjs.com/](http://gulpjs.com/))
 - SASS ([http://sass-lang.com/](http://sass-lang.com/))
 - Bourbon (ligthweight mixin library for SASS, [http://bourbon.io/](http://bourbon.io/))
 - SASS-MQ (media queries in an elegant way, [https://github.com/sass-mq/sass-mq](https://github.com/sass-mq/sass-mq))
-- ES6 via Babel transpiler (use all those shiny new [ES6 Features](http://es6-features.org/) now, [https://babeljs.io/](https://babeljs.io/))
+- ES6 (ES2015) via Babel transpiler (use all those shiny new [ES6 Features](http://es6-features.org/) now, [https://babeljs.io/](https://babeljs.io/))
 - Browserify (used together with babelify for module loading the new ES6 way via import/export in your JS files)
 - Browser-Sync (for synchronised browser testing [http://www.browsersync.io/](http://www.browsersync.io/))
 
-## ES6
+## ES6 / ES2015
 
 No reason to wait anymore, use ES6 and all its [shiny nice features](http://es6-features.org/) now! Classes, fat arrow functions, generators, promises and the new modules system can be used now using the great **Babel** transpiler that makes them available for ES5 that is supported in all modern browsers.
 
