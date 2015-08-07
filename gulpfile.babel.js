@@ -3,6 +3,10 @@ import gulploadplugins from 'gulp-load-plugins';
 import runSequence from 'run-sequence';
 import yargs from 'yargs';
 import browserSync from 'browser-sync';
+import browserify from 'browserify';
+import babelify from 'babelify';
+import source from 'vinyl-source-stream';
+import buffer from 'vinyl-buffer';
 import pkgInfo from './package.json';
 
 const $ = gulploadplugins({
@@ -32,6 +36,24 @@ gulp.task('styles', () => {
     .pipe($.size({title: 'styles'}));
 });
 
+// Scripts - app.js is the main entry point, you have to import all required files and modules
+gulp.task("scripts", () => {
+
+    return browserify({
+            entries: 'src/js/app.js',
+            debug: true
+        })
+        .transform(babelify.configure({
+            modules: "common"
+        })).bundle()
+        .pipe(source("app.js"))
+        .pipe(buffer())
+        .pipe($.if(!argv.production,$.sourcemaps.init({loadMaps: true})))
+        .pipe($.if(argv.production,$.uglify()))
+          .on('error', $.util.log)
+        .pipe($.if(!argv.production,$.sourcemaps.write()))
+        .pipe(gulp.dest("./public/js"));
+});
 
 // Browser-Sync
 gulp.task('serve', ['styles'], () => {
@@ -42,7 +64,7 @@ gulp.task('serve', ['styles'], () => {
   });
 
   gulp.watch(['public/**/*.html'], browserSync.reload);
-  gulp.watch(['src/styles/**/*.{scss,css}'], ['styles', browserSync.reload]);
-  //gulp.watch(['app/scripts/**/*.js'], ['jshint']);
-  //gulp.watch(['app/images/**/*'], browserSync.reload);
+  gulp.watch(['src/sass/**/*.{scss,css}'], ['styles', browserSync.reload]);
+  gulp.watch(['src/js/**/*.js'], ['scripts', browserSync.reload]);
+
 });

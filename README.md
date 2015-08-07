@@ -5,8 +5,8 @@ TODO:
 - default sass files [✓]
 - SASS styles gulp task [✓]
 - default HTML file [✓]
-- default javascript file [ ]
-- JS transpile browserify gulp task [ ]
+- default javascript file [✓]
+- JS transpile browserify gulp task [✓]
 - browser-sync gulp task [partial]
 - ...
 
@@ -33,7 +33,7 @@ No reason to wait anymore, use ES6 and all its [shiny nice features](http://es6-
 
 All source files belong to the src folder. The page itself is served off the ```public``` folder.
 
-Gulp tasks deploy your compiled and packed styles (one ```styles.css```) and scripts (```scripts.js```) to this public folder either uncompressed with sourcemaps as default or compressed and without sourcemaps for production (use ```--production``` argument to gulp tasks).
+Gulp tasks deploy your compiled and packed styles (one ```styles.css```) and scripts (```app.js```) to this public folder either uncompressed with sourcemaps as default or compressed and without sourcemaps for production (use ```--production``` argument to gulp tasks).
 
 
 ## Installation
@@ -48,7 +48,7 @@ npm install
 
 ## Gulp Tasks
 
-WIP coming soon
+
 
 ## Add Modules and Libraries
 
