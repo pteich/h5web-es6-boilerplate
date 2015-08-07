@@ -23,6 +23,7 @@ This boilerplate comes with these pre-installed and ready to use features:
 - ES6 (ES2015) via Babel transpiler (use all those shiny new [ES6 Features](http://es6-features.org/) now, [https://babeljs.io/](https://babeljs.io/))
 - Browserify (used together with babelify for module loading the new ES6 way via import/export in your JS files)
 - Browser-Sync (for synchronised browser testing [http://www.browsersync.io/](http://www.browsersync.io/))
+- Code minification for CSS and JS for production relases (ass `--production` argument to gulp task)
 
 ## ES6 / ES2015
 
@@ -51,6 +52,8 @@ npm install
 * `gulp serve` - starts Browsersync and serves your app for testing in different browsers (default: http://localhost:3000, Browsersync-UI at http://localhost:3001), after changes on SCSS files and JS files in `src` or HTML files in `public` the page is automatically refreshed
 * `gulp styles` - compiles your SASS files and copies the result CSS file to `public/css`
 * `gulp scripts` - transpiles your ES6 scriptfiles in `src/js`, creates a package with all imported files as `app.js` in `public/js`
+
+Add `--production` to any gulp task to activate production mode. In production mode all code will be minified and no sourcemaps are written.
 
 ## Add Modules and Libraries
 
