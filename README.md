@@ -8,6 +8,9 @@ TODO:
 - default javascript file [✓]
 - JS transpile browserify gulp task [✓]
 - browser-sync gulp task [partial]
+- add JS linting [ ]
+- add unit test runner [ ]
+- add code coverage reporting tasks [ ]
 - ...
 
 # Boilerplate for HTML5 ES6 (ES2015) Web Apps
