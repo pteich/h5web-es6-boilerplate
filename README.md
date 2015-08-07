@@ -13,6 +13,7 @@ TODO:
 # Boilerplate for HTML5 ES6 (ES2015) Web Apps
 
 Yet another boilerplate for HTML5 web apps. This time using ES6 (ECMAScript 6, ES2015) everywhere as well as SASS to superpower your styles and Gulp as your beloved task runner. It uses Browserify to bundle your Javascript dependencies so all you have to do is to import them as ES6-style module imports.
+I use this as a starting point for my web apps. Maybe you find it useful too.
 
 This boilerplate comes with these pre-installed and ready to use features:
 
