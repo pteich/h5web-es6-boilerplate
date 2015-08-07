@@ -45,11 +45,13 @@ Gulp tasks deploy your compiled and packed styles (one ```styles.css```) and scr
 
 You need NodeJS and npm allready installed on your system. If you need help have a look at [https://nodejs.org/](https://nodejs.org/)
 
-All dependecies are installed as npm packages and installed using this command:
+Clone this repo and install als dependencies with this command:
 
 ```
 npm install
 ```
+
+After that execute `gulp serve`, point your browser to http://localhost:3000 and start adding and editing files in `src`.
 
 ## Gulp Tasks
 
