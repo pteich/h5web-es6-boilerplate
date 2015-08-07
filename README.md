@@ -48,7 +48,11 @@ npm install
 
 ## Gulp Tasks
 
+```gulp serve``` - starts Browsersync and serves your app to test in different browsers, after changes on SCSS files and JS files in ```src``` or HTML files in ```public``` the page is automatically refreshed
 
+```gulp styles``` - compiles your SASS files and copies the result CSS file to ```public/css```
+
+```gulp scripts``` - transpiles your ES6 scriptfiles in ```src``` creates a package with all imported files as ```app.js``` in ```public/js```
 
 ## Add Modules and Libraries
 
