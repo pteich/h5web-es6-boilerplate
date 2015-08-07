@@ -48,7 +48,7 @@ npm install
 
 ## Gulp Tasks
 
-```gulp serve``` - starts Browsersync and serves your app to test in different browsers, after changes on SCSS files and JS files in ```src``` or HTML files in ```public``` the page is automatically refreshed
+```gulp serve``` - starts Browsersync and serves your app for testing in different browsers (default: http://localhost:3000, Browsersync-UI at http://localhost:3001), after changes on SCSS files and JS files in ```src``` or HTML files in ```public``` the page is automatically refreshed
 
 ```gulp styles``` - compiles your SASS files and copies the result CSS file to ```public/css```
 
