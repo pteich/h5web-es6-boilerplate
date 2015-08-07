@@ -2,7 +2,8 @@ import gulp from 'gulp';
 import gulploadplugins from 'gulp-load-plugins';
 import runSequence from 'run-sequence';
 import yargs from 'yargs';
-import pkg from './package.json';
+import browserSync from 'browser-sync';
+import pkgInfo from './package.json';
 
 const $ = gulploadplugins({
     lazy: true
@@ -29,4 +30,19 @@ gulp.task('styles', () => {
     .pipe($.if(!argv.production,$.sourcemaps.write()))
     .pipe(gulp.dest('public/css'))
     .pipe($.size({title: 'styles'}));
+});
+
+
+// Browser-Sync
+gulp.task('serve', ['styles'], () => {
+  browserSync({
+    notify: false,
+    logPrefix: 'H5ES6',
+    server: ['.tmp', 'public']
+  });
+
+  gulp.watch(['public/**/*.html'], browserSync.reload);
+  gulp.watch(['src/styles/**/*.{scss,css}'], ['styles', browserSync.reload]);
+  //gulp.watch(['app/scripts/**/*.js'], ['jshint']);
+  //gulp.watch(['app/images/**/*'], browserSync.reload);
 });

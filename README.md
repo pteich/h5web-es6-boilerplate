@@ -7,7 +7,7 @@ TODO:
 - default HTML file [✓]
 - default javascript file [ ]
 - JS transpile browserify gulp task [ ]
-- watchify gulp task [ ]
+- browser-sync gulp task [partial]
 - ...
 
 # Boilerplate for HTML5 ES6 Web Apps
@@ -22,6 +22,7 @@ This boilerplate comes with these pre-installed and ready to use features:
 - SASS-MQ (media queries in an elegant way, [https://github.com/sass-mq/sass-mq](https://github.com/sass-mq/sass-mq))
 - ES6 via Babel transpiler (use all those shiny new [ES6 Features](http://es6-features.org/) now, [https://babeljs.io/](https://babeljs.io/))
 - Browserify (used together with babelify for module loading the new ES6 way via import/export in your JS files)
+- Browser-Sync (for synchronised browser testing [http://www.browsersync.io/](http://www.browsersync.io/))
 
 ## ES6
 
