@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "public/index.html",
+  "author": "Peter Teich"
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,6 +12,18 @@
     "type": "git",
     "url": "https://github.com/pteich/h5web-es6-boilerplate.git"
   },
+  "keywords": [
+    "html5",
+    "boilerplate",
+    "es6",
+    "es2015",
+    "babelify",
+    "starter",
+    "kit",
+    "transpile",
+    "gulp",
+    "babel"
+  ],
   "private": false,
   "devDependencies": {
     "babel": "^5.8.21",
