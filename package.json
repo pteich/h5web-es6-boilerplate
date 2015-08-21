@@ -28,10 +28,8 @@
   "transform": [ "browserify-shim" ]
   },
   "browser": {
-    "jquery": "./node_modules/jquery/dist/jquery.js"
   },
   "browserify-shim": {
-    "jquery": "jQuery"
   },
   "private": false,
   "devDependencies": {

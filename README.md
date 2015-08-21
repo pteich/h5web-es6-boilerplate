@@ -15,7 +15,7 @@ This boilerplate comes with these pre-installed and ready to use features:
 - Browserify (used together with babelify for module loading the new ES6 way via import/export in your JS files)
 - Browser-Sync (for synchronised browser testing [http://www.browsersync.io/](http://www.browsersync.io/))
 - Code minification for CSS and JS for production releases (add `--production` argument to gulp task)
-- browserify-shim integration to load unsupported libraries like jQuery (example to load jQuery added, see `app.js` + `package.json`)
+- browserify-shim integration to load unsupported libraries ([browserify-shim-recipes](https://github.com/thlorenz/browserify-shim/wiki/browserify-shim-recipes))
 - import and use [Handlebars](http://handlebarsjs.com) templates in your JS files, they will be compiled and bundled via Browserify
 
 ## ES6 / ES2015
