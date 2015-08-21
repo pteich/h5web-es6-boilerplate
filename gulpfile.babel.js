@@ -29,10 +29,11 @@ gulp.task('styles', () => {
     }).on('error', $.sass.logError))
     .pipe($.autoprefixer({ browsers: ['last 10 version'] }))
     .pipe(gulp.dest('.tmp'))
-    // Concatenate and minify styles if production mode (via gulp styles --production) 
+    // Concatenate and minify styles if production mode (via gulp styles --production)
     .pipe($.if('*.css' && argv.production, $.minifyCss()))
     .pipe($.if(!argv.production,$.sourcemaps.write()))
     .pipe(gulp.dest('public/css'))
+    .pipe(browserSync.stream())
     .pipe($.size({title: 'styles'}));
 });
 
@@ -64,7 +65,7 @@ gulp.task('serve', ['styles'], () => {
   });
 
   gulp.watch(['public/**/*.html'], browserSync.reload);
-  gulp.watch(['src/sass/**/*.{scss,css}'], ['styles', browserSync.reload]);
+  gulp.watch(['src/sass/**/*.{scss,css}'], ['styles']);
   gulp.watch(['src/js/**/*.js'], ['scripts', browserSync.reload]);
 
 });
