@@ -4,6 +4,7 @@ import runSequence from 'run-sequence';
 import yargs from 'yargs';
 import browserSync from 'browser-sync';
 import browserify from 'browserify';
+import handlebars from 'browserify-handlebars';
 import babelify from 'babelify';
 import source from 'vinyl-source-stream';
 import buffer from 'vinyl-buffer';
@@ -46,7 +47,9 @@ gulp.task("scripts", () => {
         })
         .transform(babelify.configure({
             modules: "common"
-        })).bundle()
+        }))
+        .transform(handlebars)
+        .bundle()
         .pipe(source("app.js"))
         .pipe(buffer())
         .pipe($.if(!argv.production,$.sourcemaps.init({loadMaps: true})))
@@ -66,6 +69,6 @@ gulp.task('serve', ['styles'], () => {
 
   gulp.watch(['public/**/*.html'], browserSync.reload);
   gulp.watch(['src/sass/**/*.{scss,css}'], ['styles']);
-  gulp.watch(['src/js/**/*.js'], ['scripts', browserSync.reload]);
+  gulp.watch(['src/js/**/*.{js,es6,handlebars'], ['scripts', browserSync.reload]);
 
 });

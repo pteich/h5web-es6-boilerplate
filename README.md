@@ -3,6 +3,8 @@
 Yet another boilerplate for HTML5 web apps. This time using ES6 (ECMAScript 6, ES2015) everywhere as well as SASS to superpower your styles and Gulp as your beloved task runner. It uses Browserify to bundle your Javascript dependencies so all you have to do is to import them as ES6-style module imports.
 I use this as a starting point for my web apps. Maybe you find it useful too.
 
+## Features
+
 This boilerplate comes with these pre-installed and ready to use features:
 
 - Gulp with ES6 (ES2015) style gulpfile ([http://gulpjs.com/](http://gulpjs.com/))
@@ -14,6 +16,7 @@ This boilerplate comes with these pre-installed and ready to use features:
 - Browser-Sync (for synchronised browser testing [http://www.browsersync.io/](http://www.browsersync.io/))
 - Code minification for CSS and JS for production releases (add `--production` argument to gulp task)
 - browserify-shim integration to load unsupported libraries like jQuery (example to load jQuery added, see `app.js` + `package.json`)
+- import and use [Handlebars](http://handlebarsjs.com) templates in your JS files, they will be compiled and bundled via Browserify
 
 ## ES6 / ES2015
 
@@ -66,7 +69,9 @@ TODO:
 - default HTML file [✓]
 - default javascript file [✓]
 - JS transpile browserify gulp task [✓]
-- browser-sync gulp task [partial]
+- Handlebars support [✓]
+- Browserify support for legacy libraries [✓]
+- browser-sync gulp task [✓]
 - add JS linting [ ]
 - add unit test runner [ ]
 - add code coverage reporting tasks [ ]

@@ -23,7 +23,7 @@
     "transpile",
     "gulp",
     "babel"
-  ],  
+  ],
   "browserify": {
   "transform": [ "browserify-shim" ]
   },
@@ -41,6 +41,7 @@
     "browser-sync": "^2.8.2",
     "browserify": "^11.0.1",
     "browserify-shim": "^3.8.10",
+    "browserify-handlebars": "^1.0.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-cache": "^0.2.10",
