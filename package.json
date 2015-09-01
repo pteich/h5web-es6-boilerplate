@@ -24,14 +24,9 @@
     "gulp",
     "babel"
   ],
-  "browserify": {
-  "transform": [ "browserify-shim" ]
-  },
-  "browser": {
-  },
-  "browserify-shim": {
-  },
   "private": false,
+  "dependencies": {
+  },
   "devDependencies": {
     "babel": "^5.8.21",
     "babel-core": "^5.8.21",
@@ -60,5 +55,12 @@
     "vinyl-source-stream": "^1.1.0",
     "yargs": "^3.17.1",
     "jquery": "^2.1.4",
-  }
+  },
+  "browserify": {
+  "transform": [ "browserify-shim" ]
+  },
+  "browser": {
+  },
+  "browserify-shim": {
+  }  
 }
