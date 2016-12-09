@@ -54,7 +54,7 @@
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "yargs": "^3.17.1",
-    "jquery": "^2.1.4",
+    "jquery": "^2.1.4"
   },
   "browserify": {
   "transform": [ "browserify-shim" ]
