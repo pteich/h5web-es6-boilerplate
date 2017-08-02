@@ -6,7 +6,9 @@
   "author": "pteich",
   "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp serve",
+    "prod": "gulp --production"
   },
   "repository": {
     "type": "git",
