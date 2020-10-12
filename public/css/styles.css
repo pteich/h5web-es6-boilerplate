@@ -1,8 +1,8 @@
 @charset "UTF-8";
 body:before {
   background-color: #FCF8E3;
-  border-bottom: 1px solid #FBEED5;
-  border-left: 1px solid #FBEED5;
+  border-bottom: 2px solid #FBEED5;
+  border-left: 2px solid #FBEED5;
   color: #C09853;
   font: small-caption;
   padding: 3px 6px;
@@ -55,6 +55,7 @@ a:visited {
   color: #551a8b; }
 
 a:hover {
+  cursor:pointer;
   color: #06e; }
 
 /*
